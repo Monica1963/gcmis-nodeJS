@@ -1,0 +1,24 @@
+{
+  "name": "gcmis",
+  "version": "1.0.0",
+  "description": "Gestion de Coaching MIS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon node index.js"
+  },
+  "author": "Monica Albiaque",
+  "license": "MIT",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "docxtemplater": "^3.21.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "pizzip": "^3.0.6",
+    "xlsx": "^0.16.9"
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planillas de Coaching</title>
+</head>
+<body>
+
+    <h1>Planillas de Coaching automáticas</h1>
+     <h3>1- El informe de OM a leer deberá estar en formato excel, con el nombre OM.xlsx y contar con las siguientes columnas cuyo encabezado se encuentre en la primera fila de la planilla (respetar nombres y mayúsculas):</h3>
+         <ul>
+             <li>FECHA</li>
+             <li>TICKET</li>
+             <li>MENSAJE</li>
+             <li>UsuarioOrigen</li>
+        </ul>
+     
+     <h3>2- El archivo deberá estar en la ruta C:/COACHING/OM/ (asegurarse que exista el directorio), desde donde será leído por este proceso</h3>  
+     <h3>3- Las planillas generadas se guardarán en la ruta C:/COACHING/PLANILLAS/ (asegurarse que exista el directorio)</h3>  
+     <h3>4- Seleccionar mes-año del informe y luego iniciar el proceso desde el botón Generar Planillas</h3>
+    <!--<form name="formulario" method="POST" action="/upload" enctype   =  "multipart/form-data" >
+        <div>
+            Selecciona el mes:
+             Campo de entrada de fecha
+            <input type="month" name="mes" min="2021-01-01" max="2025-01-01" required/>
+        </div>
+        <div> 
+          Selecciono archivo excel con las OM para la generacion de los coaching
+        Selecciona el archivo a leer:
+           <input type="file"   name="archivo" />
+        </div>
+        <div> 
+            <input type="submit" name="btn_upload_profile_pic1" value="Upload1" /> 
+        </div>
+    </form>-->
+
+    <form name="formulario" method="POST" action="/coaching" >
+        <div>
+            Selecciona el mes:
+             <!-- Campo de entrada de fecha -->
+            <input type="month" name="mes" min="2021-01-01" max="2025-01-01" required/>
+       
+        <div> 
+            <input type="submit" name="btn_informe" value="Generar Planillas" /> 
+        </div>
+    </form>
+
+
+   
+</body>
+</html>
